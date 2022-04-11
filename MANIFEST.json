@@ -1,0 +1,32 @@
+{
+ "collection_info": {
+  "namespace": "pbench",
+  "name": "agent",
+  "version": "1.0.5",
+  "authors": [
+   "The Pbench team"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "pbench"
+  ],
+  "description": "Roles that help install pbench-agent",
+  "license": [
+   "GPL-3.0-or-later"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "http://github.com/distributed-system-analysis/pbench",
+  "documentation": "https://distributed-system-analysis.github.io/pbench/doc/",
+  "homepage": "http://github.com/distributed-system-analysis/pbench/agent",
+  "issues": "http://github.com/distributed-system-analysis/pbench/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "4ca6de7efeac2616d37ecac9b4b79291383dd6b0d81698952f5568c14bb4e417",
+  "format": 1
+ },
+ "format": 1
+}
