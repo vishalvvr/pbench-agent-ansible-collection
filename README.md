@@ -15,22 +15,18 @@ The roles assume that the following variables are defined:
 
 Some of these are defaulted for convenience, but pbench_repo_url_prefix and pbench_key_url are specific to an environment and need to be specified locally (most likely in the inventory file).
 
-## Install collection
-```
-$ ansible-galaxy collection install git+https://github.com/vishalvvr/pbench-agent-ansible-collection.git
-```
+An example playbook can be obtained from
 
-## Usage
-You can access example playbook and inventory files form local install location
+    https://github.com/distributed-system-analysis/pbench/blob/master/agent/ansible/pbench_agent_install.yml
 
-`~/.ansible/collections/ansible_collections/pbench/agent/docs/pbench-agent-install.yaml`
+or you can use the raw link to wget/curl the file:
 
-`~/.ansible/collections/ansible_collections/pbench/agent/docs/myhosts.inv`
+    https://raw.githubusercontent.com/distributed-system-analysis/pbench/master/agent/ansible/pbench_agent_install.yml
 
-or 
+An example inventory file that can be edited to suit your circumstances can be obtained from 
 
-wget/curl these files:
+    https://github.com/distributed-system-analysis/pbench/blob/master/agent/ansible/Inventory/pbench_agent.hosts.example
 
-[pbench-agent-install.yml](https://raw.githubusercontent.com/vishalvvr/pbench-agent-ansible-collection/main/docs/pbench-agent-install.yaml)
+The raw link for that is
 
-[myhosts.inv](https://raw.githubusercontent.com/vishalvvr/pbench-agent-ansible-collection/main/docs/myhosts.inv)
+    https://raw.githubusercontent.com/distributed-system-analysis/pbench/master/agent/ansible/Inventory/pbench_agent.hosts.example
