@@ -1,6 +1,12 @@
 name: Manually push pbench.agent collection into galaxy
 
-on: [workflow_dispatch]
+on: 
+  workflow_dispatch:
+  
+  push:
+    branches: 
+      - agent
+      - server
 
 jobs:
   release:
