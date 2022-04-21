@@ -30,3 +30,17 @@ An example inventory file that can be edited to suit your circumstances can be o
 The raw link for that is
 
     https://raw.githubusercontent.com/distributed-system-analysis/pbench/master/agent/ansible/Inventory/pbench_agent.hosts.example
+
+## Test setup
+We are just performing yaml linting on all the collection files.
+Two package [ansible-lint](https://ansible-lint.readthedocs.io/en/latest), [yamllint](https://yamllint.readthedocs.io/en/stable) are used for yaml linting
+
+### fedora users
+```
+$ dnf install -y ansible-lint yamllint make
+```
+
+### debian users
+```
+$ apt-get install -y ansible-lint yamllint make
+```

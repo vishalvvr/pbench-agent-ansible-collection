@@ -1,14 +1,27 @@
+---
 name: CI push pbench.agent collection into galaxy
 
 on:
   push:
-    branches: [ agent ]
+    branches:
+      - agent
 
 jobs:
+  
   release:
+    
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v2
+      
+      - name: install test dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y make ansible-lint yamllint
+
+      - name: test collection
+        run: make
 
       - name: Push to Galaxy
         uses: artis3n/ansible_galaxy_collection@v2

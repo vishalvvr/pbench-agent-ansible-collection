@@ -1,0 +1,21 @@
+---
+
+yaml-files:
+  - '*.yaml'
+  - '*.yml'
+  - '.yamllint'
+
+ignore: |
+  .github/*/*.yml
+
+extends: default
+
+# yamllint default rules 
+# https://yamllint.readthedocs.io/en/stable/configuration.html#default-configuration
+
+rules:
+  document-start:
+    level: warning
+  line-length: disable
+  new-line-at-end-of-file: enable
+  new-lines: enable
