@@ -11,7 +11,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Push to Galaxy
-        uses: robertdebock/galaxy-action@1.2.0
+        uses: artis3n/ansible_galaxy_collection@v2
         with:
-          galaxy_api_key: ${{ secrets.galaxy_api_key }}
-          
+          api_key: '${{ secrets.GALAXY_API_KEY }}'
