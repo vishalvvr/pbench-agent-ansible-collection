@@ -1,14 +1,15 @@
 name: CI push pbench.agent collection into galaxy
 
 on:
-  workflow_dispatch:
-    
+  push:
+    branches: [ agent ]
+
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Git checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+
       - name: Push to Galaxy
         uses: robertdebock/galaxy-action@1.2.0
         with:
