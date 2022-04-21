@@ -4,8 +4,6 @@ on:
   push:
     branches: 
       - agent
-      - server
-    
 jobs:
   release:
     runs-on: ubuntu-latest
