@@ -13,12 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      
+      - name: python 3 setup
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+          cache: 'pip'
       
       - name: install test dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y make ansible-lint yamllint
+        run: pip install -r requirements.txt
 
       - name: test collection
         run: make
